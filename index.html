@@ -107,6 +107,15 @@
         });
 
         webamp.renderWhenReady(app);
+        
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: 'ÑAUUU',
+                artist: 'HOT GAYS LISTEN TO RADIO',
+                artwork: [
+                    { src: 'img/hot.jpeg', sizes: '512x512', type: 'image/jpeg' }
+                ]
+            });
 
         window.onload = function() {
             deleteCookiesFromPage();
