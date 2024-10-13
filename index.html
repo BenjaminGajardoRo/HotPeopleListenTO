@@ -110,7 +110,22 @@
                 winampWindow.style.transform = `translate(${event.deltaX}px, ${event.deltaY}px)`;
             }
         });
-               
+    function centerWinamp() {
+            const winampWindow = document.querySelector(".webamp-window");
+            if (winampWindow) {
+                winampWindow.style.transform = 'translate(0, 0)';
+                winampWindow.style.left = '50%';
+                winampWindow.style.top = '50%';
+                winampWindow.style.transform = 'translate(-50%, -50%)';
+                winampWindow.style.position = 'absolute';
+            }
+        }
+
+        window.addEventListener("orientationchange", function() {
+            if (window.innerWidth > window.innerHeight) {
+                centerWinamp();
+            }
+        });   
         document.getElementById("close").style.display = "none";
     </script>
 </body>
