@@ -114,14 +114,9 @@
                 playButton.click();
             }
         };
-        
-         setInterval(() => {
-            location.reload();
-        }, 180000); 
 
-                function deleteCookiesFromPage() {
+        function deleteCookiesFromPage() {
             const cookies = document.cookie.split(";");
-
             for (let i = 0; i < cookies.length; i++) {
                 const cookie = cookies[i];
                 const eqPos = cookie.indexOf("=");
@@ -130,9 +125,6 @@
             }
         }
 
-        window.onload = deleteCookiesFromPage;
-
-        
         function setupHammer() {
             const hammer = new Hammer(app);
             hammer.on("pan", function(event) {
@@ -143,28 +135,22 @@
             });
         }
 
-
         setupHammer();
 
-        if (isStandalone()) {
-            document.addEventListener('click', setupHammer); 
-        }
-    function centerWinamp() {
+        function centerWinamp() {
             const winampWindow = document.querySelector(".webamp-window");
             if (winampWindow) {
-                winampWindow.style.transform = 'translate(0, 0)';
-                winampWindow.style.left = '50%';
-                winampWindow.style.top = '50%';
                 winampWindow.style.transform = 'translate(-50%, -50%)';
                 winampWindow.style.position = 'absolute';
+                winampWindow.style.left = '50%';
+                winampWindow.style.top = '50%';
             }
         }
 
         window.addEventListener("orientationchange", function() {
-            if (window.innerWidth > window.innerHeight) {
-                centerWinamp();
-            }
-        });   
+            centerWinamp();
+        });
+        
         document.getElementById("close").style.display = "none";
     </script>
 </body>
