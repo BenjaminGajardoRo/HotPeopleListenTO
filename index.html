@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
     <title>HOT PEOPLE LISTEN TO</title>
     <style>
         body {
@@ -12,7 +15,7 @@
             justify-content: center;
             align-items: center;
             background-color: black;
-            background-image: url('img/SPARKS.gif');
+            background-image: url('img/sparks.gif');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -31,6 +34,7 @@
             position: relative;
             z-index: 1;
         }
+
         #close {
             display: none;
         }
@@ -98,11 +102,10 @@
                 }
             ],
         });
-        
 
         webamp.renderWhenReady(app);
                
-       document.getElementById("close").style.display = "none";
+        document.getElementById("close").style.display = "none";
     </script>
 </body>
 </html>
