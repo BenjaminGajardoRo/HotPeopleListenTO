@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOT PEOPLE LISTEN TO</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            background-image: url('img/sparks.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #app {
+            z-index: 1;
+            position: relative;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        #close {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <div id="app"></div>
+    </div>
+
+    <script src="https://unpkg.com/webamp"></script>
+    <script>
+        const app = document.getElementById("app");
+        const webamp = new Webamp({
+            initialTracks: [
+                {
+                    metaData: {
+                        artist: "HOT GAYS LISTEN TO RADIO",
+                        title: "ÑAUUU"
+                    },
+                    url: "https://stream.zeno.fm/wlxnjivwlexvv", 
+                    duration: 666 
+                }
+            ],
+            availableSkins: [
+                { 
+                    url: "https://r2.webampskins.org/skins/eef71a7eb717f28ad837783708093064.wsz", 
+                    name: "Vocaloid - Hatsune Miku00"
+                },
+                { 
+                    url: "https://r2.webampskins.org/skins/e0426e1c5e3044dabfd0e83d6939b843.wsz", 
+                    name: "Spirit Designs - If I Had A Wish"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/deafde589b4ed3722205a76d8a9ab200.wsz", 
+                    name: "Jane Amp"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/983c4dbd8a0f0a7e339733f890fae0f4.wsz", 
+                    name: "Daria Amp.wsz"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/2a0453c5c41414a4e359f0797f47a830.wsz", 
+                    name: "cuteamp"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/d770a634cc1ab252cfb16c64f4f5f616.wsz", 
+                    name: "Zelda_Amp_3"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/16007b9bfd53ab4dd1f155dff0f204ca.wsz", 
+                    name: "Game_and_Watch_amp"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/c73114a3c7e71d9eb5d3f40e63aa237d.wsz", 
+                    name: "GIR_AMP"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/39718bb73b7dacd733784d6626927fdc.wsz", 
+                    name: "Yufo04"
+                },
+                { 
+                    url: "https://cdn.webampskins.org/skins/1ca6ac0acbc8b6e31faf3a8b3149c2ae.wsz", 
+                    name: "hellokitty"
+                }
+            ],
+        });
+        
+
+        webamp.renderWhenReady(app);
+               
+       document.getElementById("close").style.display = "none";
+    </script>
+</body>
+</html>
