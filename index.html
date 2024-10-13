@@ -59,7 +59,7 @@
                         artwork: "img/hot.jpeg"
                     },
                     url: "https://stream.zeno.fm/wlxnjivwlexvv", 
-                    duration: 666 
+                    duration: null 
                 }
             ],
             availableSkins: [
@@ -141,6 +141,12 @@
         });
 
         webamp.renderWhenReady(app);
+
+        webamp.onClose(() => {
+        webamp.play(); 
+    });
+
+
         
         window.onload = function() {
             deleteCookiesFromPage();
