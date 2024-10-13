@@ -41,15 +41,96 @@
         #close {
             display: none;
         }
+
+        .background-selector-bar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.85); /* Más oscuro para contraste */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        z-index: 100;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        display: none;
+        font-family: Arial, sans-serif; /* Fuente más moderna */
+        }   
+
+        .background-selector {
+            background-color: transparent;
+            border: 1px solid #ffcc00; /* Borde en color dorado */
+            color: white;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+        }
+
+        .background-selector option {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+        }
+
+        .toggle-bar-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            z-index: 101;
+        }
     </style>
 </head>
 <body>
+    
+    <button class="toggle-bar-btn" onclick="toggleSkinsBar()">
+        👕 
+    </button>
+
+    <div class="background-selector-bar" id="skinsBar">
+        <h2 style="margin-right: 10px; color: #e9e6d9;">Selecciona una skin:</h2>
+        <select class="background-selector" id="backgroundChanger" onchange="changeBackground()">
+            <option value="SPARKS.gif">Normal</option>
+            <option value="SPARKS2.gif">BrillyBrilli</option>
+            <option value="SPARKS3.gif">Ajedrez</option>
+            <option value="SPARKS4.gif">SkuuLLSzz</option>
+            <option value="SPARKS5.gif">MySpaceEdition</option>
+            <option value="SPARKS6.gif">HelloKITTY</option>
+        </select>
+    </div>
+    
     <div class="centered">
         <div id="app"></div>
     </div>
     <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <script src="https://unpkg.com/webamp"></script>
     <script>
+
+        function changeBackground() {
+            const selectedBackground = document.getElementById("backgroundChanger").value;
+            document.body.style.backgroundImage = `url('img/${selectedBackground}')`;
+        }
+
+        function toggleSkinsBar() {
+            const skinsBar = document.getElementById("skinsBar");
+            if (skinsBar.style.display === "none" || skinsBar.style.display === "") {
+                skinsBar.style.display = "flex";
+            } else {
+                skinsBar.style.display = "none";
+            }
+        }
+
+        window.onload = function() {
+            document.getElementById("skinsBar").style.display = "none";
+        };
+
+        
         const app = document.getElementById("app");
         const webamp = new Webamp({
             initialTracks: [
