@@ -106,6 +106,12 @@
         });
 
         webamp.renderWhenReady(app);
+        
+         setInterval(() => {
+            location.reload();
+        }, 180000); 
+
+        
         function setupHammer() {
             const hammer = new Hammer(app);
             hammer.on("pan", function(event) {
