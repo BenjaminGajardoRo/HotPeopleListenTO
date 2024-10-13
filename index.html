@@ -104,12 +104,22 @@
         });
 
         webamp.renderWhenReady(app);
-        hammer.on("pan", function(event) {
-            const winampWindow = document.querySelector(".webamp-window");
-            if (winampWindow) {
-                winampWindow.style.transform = `translate(${event.deltaX}px, ${event.deltaY}px)`;
-            }
-        });
+        function setupHammer() {
+            const hammer = new Hammer(app);
+            hammer.on("pan", function(event) {
+                const winampWindow = document.querySelector(".webamp-window");
+                if (winampWindow) {
+                    winampWindow.style.transform = `translate(${event.deltaX}px, ${event.deltaY}px)`;
+                }
+            });
+        }
+
+
+        setupHammer();
+
+        if (isStandalone()) {
+            document.addEventListener('click', setupHammer); 
+        }
     function centerWinamp() {
             const winampWindow = document.querySelector(".webamp-window");
             if (winampWindow) {
