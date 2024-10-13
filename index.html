@@ -153,7 +153,20 @@
         webamp.play(); 
     });
 
-
+        if ('mediaSession' in navigator) {
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: 'HOT PEOPLE LISTEN TO',
+                artist: 'HOT GAYS LISTEN TO RADIO',
+                album: 'ÑAUUU',
+                artwork: [
+                    { src: 'img/hot.jpeg', sizes: '96x96', type: 'image/jpeg' },
+                    { src: 'img/hot.jpeg', sizes: '128x128', type: 'image/jpeg' },
+                    { src: 'img/hot.jpeg', sizes: '192x192', type: 'image/jpeg' },
+                    { src: 'img/hot.jpeg', sizes: '256x256', type: 'image/jpeg' },
+                    { src: 'img/hot.jpeg', sizes: '384x384', type: 'image/jpeg' },
+                    { src: 'img/hot.jpeg', sizes: '512x512', type: 'image/jpeg' }
+                ]
+            });
         
         window.onload = function() {
             deleteCookiesFromPage();
