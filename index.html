@@ -44,7 +44,7 @@
     <div class="centered">
         <div id="app"></div>
     </div>
-
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <script src="https://unpkg.com/webamp"></script>
     <script>
         const app = document.getElementById("app");
@@ -104,6 +104,12 @@
         });
 
         webamp.renderWhenReady(app);
+        hammer.on("pan", function(event) {
+            const winampWindow = document.querySelector(".webamp-window");
+            if (winampWindow) {
+                winampWindow.style.transform = `translate(${event.deltaX}px, ${event.deltaY}px)`;
+            }
+        });
                
         document.getElementById("close").style.display = "none";
     </script>
