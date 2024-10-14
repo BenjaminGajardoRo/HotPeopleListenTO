@@ -113,6 +113,7 @@ webamp.renderWhenReady(app).then(() => {
             title: 'HOT PEOPLE LISTEN TO',
             artist: 'HOT GAYS LISTEN TO RADIO',
             album: 'ÑAUUU',
+            duration: null,
             artwork: [
                 { src: 'img/hot.jpeg', sizes: '96x96', type: 'image/jpeg' },
                 { src: 'img/hot.jpeg', sizes: '128x128', type: 'image/jpeg' },
