@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('img/SPARKS.gif');
+    background-size: auto; 
+    background-position: center;
+    background-repeat: repeat; 
+}
+
+#app {
+    z-index: 1;
+    position: relative;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#close {
+    display: none;
+}
+
+.background-selector-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    font-family: Arial, sans-serif;
+}
+
+.background-selector {
+    background-color: transparent;
+    border: 1px solid #ffcc00;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.background-selector option {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.toggle-bar-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 101; 
+}
+
+.icon-image {
+    width: 50px;
+    height: 50px;
+}
