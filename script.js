@@ -38,71 +38,71 @@ const webamp = new Webamp({
     availableSkins: [
     { 
         url: "https://r2.webampskins.org/skins/eef71a7eb717f28ad837783708093064.wsz", 
-        name: "Vocaloid"
+        name: "Vocaloid Dream - Miku"
     },
     { 
         url: "https://cdn.webampskins.org/skins/1ca6ac0acbc8b6e31faf3a8b3149c2ae.wsz", 
-        name: "hello_kitty"
+        name: "Kitty Vibes"
     },
     { 
         url: "https://r2.webampskins.org/skins/e0426e1c5e3044dabfd0e83d6939b843.wsz", 
-        name: "Spirit Designs"
+        name: "Wishful Spirit"
     },
     { 
         url: "https://cdn.webampskins.org/skins/deafde589b4ed3722205a76d8a9ab200.wsz", 
-        name: "Jane_Amp"
+        name: "Jane's Classics"
     },
     { 
         url: "https://cdn.webampskins.org/skins/983c4dbd8a0f0a7e339733f890fae0f4.wsz", 
-        name: "Daria_Amp"
+        name: "Daria's Grunge"
     },
     { 
         url: "https://cdn.webampskins.org/skins/2a0453c5c41414a4e359f0797f47a830.wsz", 
-        name: "cute_amp"
+        name: "Cute Harmony"
     },
     { 
         url: "https://cdn.webampskins.org/skins/d770a634cc1ab252cfb16c64f4f5f616.wsz", 
-        name: "Zelda_Amp_3"
+        name: "Legend of Zelda - Triforce"
     },
     { 
         url: "https://cdn.webampskins.org/skins/16007b9bfd53ab4dd1f155dff0f204ca.wsz", 
-        name: "Game_and_Watch_amp"
+        name: "Retro Game Watch"
     },
     { 
         url: "https://cdn.webampskins.org/skins/c73114a3c7e71d9eb5d3f40e63aa237d.wsz", 
-        name: "GIR_AMP"
+        name: "GIR Tech"
     },
     { 
         url: "https://cdn.webampskins.org/skins/39718bb73b7dacd733784d6626927fdc.wsz", 
-        name: "Yufo04"
+        name: "Yufo Mystique"
     },
     { 
         url: "https://cdn.webampskins.org/skins/29fa893ddd16de01debad4061d57b0db.wsz", 
-        name: "hellokitty2"
+        name: "Kitty Dreams"
     },
     { 
         url: "https://cdn.webampskins.org/skins/4efb838c8460ba74925785cd3ffa31d6.wsz", 
-        name: "weed"
+        name: "Chill Weed"
     },
     { 
         url: "https://cdn.webampskins.org/skins/580ed76ffaa20948b39d6d9dca060655.wsz", 
-        name: "evangelion"
+        name: "Evangelion Pulse"
     },
     { 
         url: "https://cdn.webampskins.org/skins/36ab6bc015487b7fc0239a02eb8a359b.wsz", 
-        name: "Pip Girl"
+        name: "Pip-Girl Retro"
     },
     { 
         url: "https://cdn.webampskins.org/skins/055e68f22dec7351f361ffef541ae293.wsz", 
-        name: "PochaccoAmp"
+        name: "Pochacco Vibes"
     },
     { 
         url: "https://cdn.webampskins.org/skins/9eb612632a6cfb218b64e7ca15621faa.wsz", 
-        name: "Pochacco_Purple"
+        name: "Purple Pochacco"
     },
     { 
         url: "https://cdn.webampskins.org/skins/4786cdb7a5a0ae041b7147c9f8ea9ef0.wsz", 
-        name: "sanrio"
+        name: "Sanrio Bliss"
     }
 ],
 });
