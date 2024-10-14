@@ -165,3 +165,23 @@ function centerWinamp() {
 window.addEventListener("orientationchange", function() {
     centerWinamp();
 });
+
+
+// evento para la barra de búsqueda sin interrumpir la música en vivo
+document.querySelector(".seeking-bar").addEventListener("input", function(event) {
+    const currentTrack = webamp.getMedia().getCurrentTrack();
+    const isLiveStream = currentTrack.getDuration() === null;
+
+
+    if (isLiveStream) {
+        event.preventDefault();
+        return;
+    }
+    
+    const seekToTime = event.target.value;
+    webamp.seekTo(seekToTime);
+});
+
+webamp.onClose(() => {
+    webamp.play();
+});
