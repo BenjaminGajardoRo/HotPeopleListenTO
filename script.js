@@ -41,6 +41,10 @@ const webamp = new Webamp({
             name: "Vocaloid - Hatsune Miku00"
         },
         { 
+            url: "https://cdn.webampskins.org/skins/1ca6ac0acbc8b6e31faf3a8b3149c2ae.wsz", 
+            name: "hellokitty"
+        },
+        { 
             url: "https://r2.webampskins.org/skins/e0426e1c5e3044dabfd0e83d6939b843.wsz", 
             name: "Spirit Designs - If I Had A Wish"
         },
@@ -71,10 +75,6 @@ const webamp = new Webamp({
         { 
             url: "https://cdn.webampskins.org/skins/39718bb73b7dacd733784d6626927fdc.wsz", 
             name: "Yufo04"
-        },
-        { 
-            url: "https://cdn.webampskins.org/skins/1ca6ac0acbc8b6e31faf3a8b3149c2ae.wsz", 
-            name: "hellokitty"
         },
         { 
             url: "https://cdn.webampskins.org/skins/29fa893ddd16de01debad4061d57b0db.wsz", 
