@@ -76,11 +76,6 @@ const webamp = new Webamp({
             url: "https://cdn.webampskins.org/skins/1ca6ac0acbc8b6e31faf3a8b3149c2ae.wsz", 
             name: "hellokitty"
         },
-        
-        { 
-            url: "https://cdn.webampskins.org/skins/1ca6ac0acbc8b6e31faf3a8b3149c2ae.wsz", 
-            name: "hellokitty"
-        },
         { 
             url: "https://cdn.webampskins.org/skins/29fa893ddd16de01debad4061d57b0db.wsz", 
             name: "hellokitty2"
